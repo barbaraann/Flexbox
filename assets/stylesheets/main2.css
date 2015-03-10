@@ -1,0 +1,173 @@
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container,
+.grid {
+   display: flex;
+   justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+header {
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;*/
+}
+.sub {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+
+}
+.col-1-3 {
+    width: 33.33%;
+
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    /*display: inline-flex;*/
+    vertical-align: top;
+
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group::after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    overflow: auto;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+    margin-bottom: 22px;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+}
+
+.btn-alt {
+    border: 1px solid #dfe2e5;
+    padding: 10px 30px;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+    border-top: 4px solid #648880;
+    /*float: left;*/
+    padding: 40px 0 22px 0;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+    padding-bottom: 44px;
+    padding-top: 44px;
+}
+
+.primary-footer small {
+    /*float: left;*/
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    padding: 22px 80px 66px 80px;
+}
+
+/*
+  ========================================
+  see regions of document - for development only
+  ========================================
+*/
+
+
+header {
+    background-color: lightblue;
+}
+
+section.hero {
+    background-color: green;
+}
+
+section.grid {
+    background-color: pink;
+}
+
+h1, section.col-1-3 {
+    border: 2px solid red;
+}
+
+h3, nav {
+    border: 2px solid black;
+}
+
+footer {
+    background-color: darkturquoise;
+}
